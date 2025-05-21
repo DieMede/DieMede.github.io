@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <title>Unidad 3 Actividad 01</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Medellin Rios Diego">
+    <meta name="Fecha" content="29 de abril de 2025">
+    <meta name="Descripción" content="Hola Mundo JavaScript">
+ </head>
+ <body>
+    <script>document.write("UPSLP");</script>
+    <h1>Unidad 3| Actividad 01::Tema (Hola Mundo JavaScript)</h1>
+    <script>
+      let numtabla;
+      do{
+         numtabla = window.prompt("Cuál tabla deseas calcular[1-10]:");
+         numtabla = Number(numtabla);
+      }while(numtabla < 1 || numtabla > 10);
+      let i;
+      document.write("<table>");
+      document.write("<tr><th>No.</th><th>Suma</th><th>Multiplica</th></tr>");
+      for(i=1; i<=10;i++ ) {
+         document.write("<tr><td>"+ i + "</td><td>" + numtabla + "+" + i + "=" + (numtabla + i) + "</td><td>"+ numtabla+ "x" + i +"="+ (numtabla*i)+"</td></tr>");
+      }
+      document.write("</table>");
+    </script>
+ </body>
+</html>
